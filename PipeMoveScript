@@ -1,0 +1,28 @@
+#include <iostream>
+
+class PipeMoveScript
+{
+public:
+    float moveSpeed = 5;
+    float deadZone = -40;
+
+    PipeMoveScript()
+    {
+      
+    }
+
+    void Update()
+    {
+        
+    }
+
+    void Move()
+    {
+      
+    }
+
+    void CheckDeadZone()
+    {
+        
+    }
+};
