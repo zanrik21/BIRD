@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+
+class LogicScript
+{
+public:
+    int playerScore;
+    std::string scoreText;
+    bool gameOverScreenActive;
+
+    LogicScript()
+    {
+        playerScore = 0;
+        scoreText = "0";
+        gameOverScreenActive = false;
+    }
+
+    void AddScore(int scoreToAdd)
+    {
+        playerScore += scoreToAdd;
+        scoreText = std::to_string(playerScore);
+    }
+
+    void RestartGame()
+    {
+        
+    }
+
+    void GameOver()
+    {
+        gameOverScreenActive = true;
+    }
+};
