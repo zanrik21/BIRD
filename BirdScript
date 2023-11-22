@@ -1,0 +1,43 @@
+#include <iostream>
+
+class BirdScript
+{
+public:
+    Rigidbody2D* myRigidbody2D;
+    float flapStrengh;
+    LogicScript* logic;
+    bool birdIsAlive;
+
+    BirdScript()
+    {
+        myRigidbody2D = nullptr;
+        flapStrengh = 0.0f;
+        logic = nullptr;
+        birdIsAlive = true;
+    }
+
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
+
+    void Flap()
+    {
+  
+    }
+
+    void CheckPosition()
+    {
+        
+    }
+
+    void OnCollisionEnter2D()
+    {
+        
+    }
+};
