@@ -1,0 +1,34 @@
+#include "LogicScript.h" // Передполагається, що у вас є файл заголовка для LogicScript
+
+class PipeMiddleScript
+{
+private:
+    LogicScript* logic;
+
+public:
+    // Конструктор класу
+    PipeMiddleScript()
+    {
+        logic = nullptr;
+    }
+
+    // Метод для налаштування логіки
+    void SetLogic(LogicScript* logicScript)
+    {
+        logic = logicScript;
+    }
+
+    // Метод, що викликається при зіткненні
+    void OnTriggerEnter2D(Collider2D* collision)
+    {
+        // Перевірка на nullptr, щоб уникнути помилок
+        if (collision != nullptr && logic != nullptr)
+        {
+            // Перевірка шару гри
+            if (collision->layer == 3)
+            {
+                logic->AddScore(1);
+            }
+        }
+    }
+};
